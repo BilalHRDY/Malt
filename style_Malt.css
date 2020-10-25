@@ -1,0 +1,40 @@
+header{
+	display: flex;
+}
+.logo{
+	width: 130px;
+}
+.logo img{
+	max-width: 100%
+}
+#rond_back{
+	background-color: #F7F7F7 ;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+}
+#rond_loupe{
+	background-color: #E5E5E5;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	border: 2px blue solid;
+	margin: 10px auto ;
+
+}
+
+.test{
+	display: flex;
+	justify-content: center;
+	
+}
+.test p::before{
+	content: "";
+	background-color: black;
+	width: 50px;	
+	height: 10px;
+	position: absolute;
+	right: 10px;
+	transform: rotate(45deg);
+
+}
