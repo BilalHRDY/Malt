@@ -70,7 +70,7 @@ header ul{
     padding-left: 0px ;
 }
 
-header a{
+.link{
 	margin:auto 30px auto 0px;
 	text-decoration: none;
 	color: black;
@@ -78,7 +78,7 @@ header a{
 }
 
 
-#first_link::after{
+.link::after{
 	content: '';
 	background-color: white;
 	width: 100%;
@@ -88,39 +88,24 @@ header a{
 	bottom: -130%;
 
 }
-#first_link:hover::after{
+.link:hover::after{
 	content: '';
 	background-color: black;
 	width: 100%;
 	height: 3px;
 	position: absolute;
 	left: 0;
-
 	bottom: -130%;
-
-}
-#first_link:after:hover{
-	content: '';
-	background-color: white;
-	width: 100%;
-	height: 3px;
-	position: absolute;
-	left: 0;
-
-	bottom: -130%;
-
 }
 
 
-
-
-
-.menu_nav_right{
+.nav_right{
 	margin:auto;
 	display: flex;
 	justify-content: flex-end;
 	flex-grow: 1;
 }
+
 
 .bouton_connection{
 	margin:auto 20px auto 20px;
@@ -140,14 +125,12 @@ header a{
 	border-radius: 50px;
 }
 
-.menu_nav_right a{
+.nav_right a{
 	margin: 0px ;
+	text-decoration: none;
 }
 
 .bouton_demarrer a{
 	color: white;
 }
-
-	
-
 
