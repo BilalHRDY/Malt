@@ -4,24 +4,58 @@ body{
 
 header{
 	display: flex ;
+	align-items: center;
 	font-family: 'Trebuchet MS' ;
 	font-size: 15px;
 	height: 65px;
-
 }
 
 .logo{
 	width: 130px;
 	min-width: 130px;
-	margin:auto;
+}
+.logo:hover{
+	cursor: pointer;
 }
 
 .logo img{
 	max-width: 100%;
 }
 
-/********************************************************/
-         /*Création de la loupe de recherche*/
+header ul{
+	list-style-type: none;
+    display: flex;
+    padding-left: 0px ;
+}
+
+.link{
+	margin:auto 30px auto 0px;
+	text-decoration: none;
+	color: black;
+	position: relative;
+}
+
+.link::after{
+	content: '';
+	background-color: white;
+	width: 100%;
+	height: 3px;
+	position: absolute;
+	left: 0;
+	bottom: -130%;
+}
+
+.link:hover::after{
+	content: '';
+	background-color: black;
+	width: 100%;
+	height: 3px;
+	position: absolute;
+	left: 0;
+	bottom: -130%;
+}
+
+/*****************Création de la loupe de recherche***************/
 
 #loupe{
 	margin:auto 20px;
@@ -31,6 +65,7 @@ header{
 	height: 46px;
 	border-radius: 50%;
 	position: relative;
+	cursor: pointer;
 }
 
 #loupe::after{
@@ -48,7 +83,7 @@ header{
 	position: absolute;
 }
 
-#tige_loupe{
+#tige-loupe{
 	content: "";
 	background-color: #4A5279;
 	width:10px;	
@@ -61,76 +96,37 @@ header{
 	position: absolute;
 	transform: rotate(45deg);
 }
-/*************************************************************/
 
-header ul{
-	margin:auto ;
-	list-style-type: none;
-    display: flex;
-    padding-left: 0px ;
-}
+/******************Côté droit du header***************/
 
-.link{
-	margin:auto 30px auto 0px;
-	text-decoration: none;
-	color: black;
-	position: relative;
-}
-
-
-.link::after{
-	content: '';
-	background-color: white;
-	width: 100%;
-	height: 3px;
-	position: absolute;
-	left: 0;
-	bottom: -130%;
-
-}
-.link:hover::after{
-	content: '';
-	background-color: black;
-	width: 100%;
-	height: 3px;
-	position: absolute;
-	left: 0;
-	bottom: -130%;
-}
-
-
-.nav_right{
-	margin:auto;
+.nav-right{
 	display: flex;
 	justify-content: flex-end;
+	align-items: center;
 	flex-grow: 1;
 }
 
-
-.bouton_connection{
-	margin:auto 20px auto 20px;
-	border: 2px #464646 solid ;
-	padding: 10px 22px;
-	border-radius: 50px;
-}
-.bouton_connection a{
-	color: #464646;
-}
-	
-.bouton_demarrer{
-	margin: auto 0px;
-	background-color: #FF4646;
-	border: 2px solid #FF4646 ;
-	padding: 10px 22px;
-	border-radius: 50px;
-}
-
-.nav_right a{
-	margin: 0px ;
+.link-right{
+	margin: 0px;
 	text-decoration: none;
 }
 
-.bouton_demarrer a{
+.button-link{
+	padding: 10px 22px;
+	border-radius: 50px;
+	text-decoration: none;
+	border: 2px solid;
+}
+.button-link-white{
+	margin:auto 20px auto 20px;
+	border-color: #464646  ;
+	color: #464646;
+}
+	
+.button-link-red {
+	background-color: #FF4646;
+	border-color:  #FF4646 ;
 	color: white;
 }
+/******************************************************/
 
