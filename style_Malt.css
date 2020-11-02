@@ -58,10 +58,11 @@ header ul{
 	transform: scale(1);
 	transition: 0.3s;
 }
+
 .link-fleche{
-	padding-right: 20px;
-	
+	padding-right: 22px;
 }
+
 .link-fleche::before{
 	content: '';
 	position: absolute;
@@ -69,8 +70,9 @@ header ul{
 	height: 10px;
 	border: solid black;
  	border-width: 0 1px 1px 0;
- 	right: 0;
- 	transform: rotate(45deg) translateY(-10%);
+ 	right: 5px;
+ 	transform-origin: center;
+ 	transform: rotate(45deg) translateY(-25%);
 }
 
 .link-fleche:hover::before{
@@ -205,6 +207,6 @@ header ul{
 	height: 4px;
 	border: solid white;
  	border-width: 0 2px 2px 0;
-  	transform-origin:bottom right;
-   	transform: rotate(-45deg) translateY(-50%);
+  	transform-origin:center;
+   	transform: rotate(-45deg);
 }
